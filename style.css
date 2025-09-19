@@ -1,45 +1,75 @@
+/* Import a modern Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9fafc;
   color: #333;
   margin: 0;
   padding: 0;
+  line-height: 1.6;
+}
+
+/* Header (Hero Section) */
+header {
+  background: linear-gradient(135deg, #2a2a72, #009ffd);
+  color: white;
+  padding: 4rem 2rem;
   text-align: center;
 }
 
-header {
-  background-color: #2a2a72;
-  color: white;
-  padding: 2rem 0;
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
 }
 
-.pdf-container {
+header p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  opacity: 0.9;
+}
+
+/* Main Content */
+.container {
+  max-width: 900px;
   margin: 3rem auto;
-  background: white;
-  padding: 2rem;
-  border-radius: 10px;
-  max-width: 500px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 0 1.5rem;
 }
 
+.card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Buttons */
 .btn {
   display: inline-block;
-  padding: 1rem 2rem;
-  background-color: #2a2a72;
+  padding: 0.9rem 2rem;
+  background: #009ffd;
   color: white;
   text-decoration: none;
-  border-radius: 5px;
-  margin-top: 1rem;
-  transition: background-color 0.3s;
+  border-radius: 50px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,159,253,0.3);
 }
 
 .btn:hover {
-  background-color: #1e1e50;
+  background: #007bbd;
+  box-shadow: 0 6px 14px rgba(0,159,253,0.4);
 }
 
+/* Footer */
 footer {
   margin-top: 5rem;
-  padding: 2rem 0;
+  padding: 2rem;
   background-color: #2a2a72;
   color: white;
+  text-align: center;
+  font-size: 0.9rem;
 }
