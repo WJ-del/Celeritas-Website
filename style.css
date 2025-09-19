@@ -1,13 +1,21 @@
 /* Import a modern Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-body {
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
   font-family: 'Poppins', sans-serif;
   background-color: #f9fafc;
   color: #333;
-  margin: 0;
-  padding: 0;
   line-height: 1.6;
+}
+
+/* Layout Wrapper */
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /* Header (Hero Section) */
@@ -30,10 +38,18 @@ header p {
   opacity: 0.9;
 }
 
+/* Main Content */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 /* Background Section */
 .section-bg {
   background: url('images/background.jpg') no-repeat center center/cover;
-  padding: 5rem 2rem;
+  padding: 3rem 2rem; /* Reduced padding to minimize whitespace */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,14 +63,6 @@ header p {
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
   max-width: 700px;
   text-align: center;
-}
-
-/* Hero Image */
-.hero-img {
-  max-width: 300px;
-  margin-bottom: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 /* Buttons */
@@ -78,7 +86,6 @@ header p {
 
 /* Footer */
 footer {
-  margin-top: 0;
   padding: 2rem;
   background-color: #2a2a72;
   color: white;
