@@ -48,11 +48,13 @@ main {
 
 /* Background Section */
 .section-bg {
-  background: url('images/background.jpg') no-repeat center center/cover;
-  padding: 3rem 2rem; /* Reduced padding to minimize whitespace */
+  background: url('images/background.jpg') no-repeat center center / cover;
+  width: 100%;
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 3rem 2rem;
 }
 
 /* Card Overlay */
