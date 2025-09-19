@@ -32,5 +32,27 @@
   </div>
 
   <script src="script.js"></script>
+
+  <!-- Question Popup -->
+<div id="question-popup">
+  <button id="open-btn">💬 Ask a Question</button>
+
+  <div id="popup-form">
+    <form action="https://formspree.io/f/yourFormID" method="POST" target="_blank">
+      <label for="name">Name</label>
+      <input type="text" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" name="email" required>
+
+      <label for="question">Question</label>
+      <textarea name="question" required></textarea>
+
+      <button type="submit">Send</button>
+      <button type="button" id="close-btn">✖</button>
+    </form>
+  </div>
+</div>
+
 </body>
 </html>
